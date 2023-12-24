@@ -8,4 +8,4 @@ if __name__ == "__main__":
 
     res = get_predictions(directory_path=dir_path, save_path=save_path,
                           device="cuda:0")
-    save_to_csv(res, save_path="save_imgs")
+    save_to_csv(res, save_path=save_path)
