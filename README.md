@@ -1,4 +1,4 @@
-# AI Energy Hackathon
+# AI Energy Hackathon - команда MISIS again
 ## Датасет
 Мы собрали и разметили собственный датасет в Roboflow
 ## Решение
