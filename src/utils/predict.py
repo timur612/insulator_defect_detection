@@ -38,14 +38,17 @@ def get_predictions(directory_path: str,
 
         size = [result.image_width, result.image_height]
         list_with_coordinates = result.object_prediction_list
-        for k, i in enumerate(list_with_coordinates):
-            bbox = i.bbox
-            x, y, w, h = bbox.to_xywh()
-            zz = [x / size[0], y / size[1], w / size[0], h / size[1]]
-            zz[0] = zz[0] + zz[2] / 2
-            zz[1] = zz[1] + zz[3] / 2
-            zz.append(i.score.value)
-            zz.append(item[:-4] + '_' + str(k + 1))
-            res.append(zz)
+        if len(list_with_coordinates) > 0:
+            for k, i in enumerate(list_with_coordinates):
+                bbox = i.bbox
+                x, y, w, h = bbox.to_xywh()
+                zz = [x / size[0], y / size[1], w / size[0], h / size[1]]
+                zz[0] = zz[0] + zz[2] / 2
+                zz[1] = zz[1] + zz[3] / 2
+                zz.append(i.score.value)
+                zz.append(item[:-4] + '_' + str(k + 1))
+                res.append(zz)
+        else:
+            res.append([0, 0, 0, 0, 0, item])
 
     return res

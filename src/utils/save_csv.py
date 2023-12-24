@@ -19,8 +19,11 @@ def save_to_csv(res: list, save_path: str):
         nex = []
         prob = []
         for i in v:
-            nex.append([i[0], i[1], i[2], i[3]])
-            prob.append(1)  # i[4]
+            if i[0] == 0 and i[1] == 0 and i[2] == 0 and i[3] == 0:
+                nex.append(0)
+            else:
+                nex.append([i[0], i[1], i[2], i[3]])
+            prob.append(1 if i[4] > 0 else 0)  # i[4]
         sub.append(nex)
         sub.append(prob)
         bit.append(sub)
