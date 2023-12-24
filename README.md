@@ -11,8 +11,8 @@
 
 ```
 pip install requirements.txt
-python main.py name_of_dir_imgs name_of_dir_save_files
+python src/main.py name_of_dir_imgs name_of_dir_save_files
 ```
 
 ### Веса моделей
-[ссылка на весе](googe.com)
+[ссылка на веса]()
