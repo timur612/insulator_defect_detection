@@ -28,8 +28,8 @@ def get_predictions(directory_path: str,
         s = f'{directory_path}/{item}'
         result = get_sliced_prediction(s,
                                        detection_model,
-                                       slice_height=500,
-                                       slice_width=500,
+                                       slice_height=350,
+                                       slice_width=350,
                                        overlap_height_ratio=0.55,
                                        overlap_width_ratio=0.55,
                                        )
