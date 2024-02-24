@@ -6,7 +6,7 @@ There are a lot of power lines in our country, which is why their maintenance ta
 
 
 ## 💾 Data
-We were given several links to rotoflow, thanks to which we marked up and collected a database of images in the size of > 1800 pieces. We also had 17 pictures for the test.
+We were given several links to roboflow, thanks to which we marked up and collected a database of images in the size of > 1800 pieces. We also had 17 pictures for the test.
 
 ![DJI_0038 (1)](https://github.com/timur612/insulator_defect_detection/assets/86769332/70daa4f6-10da-4d74-a1c3-28e73a5e801a)
 ![DJI_0037_JPG rf 14ae7dcc09b16f1ee225a540d27e260f jpg (2)](https://github.com/timur612/insulator_defect_detection/assets/86769332/0dc211ad-1be1-4b34-bba9-7cb9ba1d6133)
